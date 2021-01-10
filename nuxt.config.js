@@ -47,12 +47,13 @@ export default {
   components: true,
 
   buildModules: [
+    '@ergonode/vuems',
     '@nuxtjs/router',
   ],
 
   modules: [
-    '@ergonode/vuems',
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
   ],
 
   vuems: {
@@ -68,6 +69,18 @@ export default {
   axios: {
     baseURL: BASE_URL || 'http://localhost:8000',
   },
-
-  build: {},
+  build: {
+    babel: {
+      configFile: './babel.config.js',
+    },
+    parallel: true,
+    cssSourceMap: false,
+    optimizeCSS: true,
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+        maxSize: 200000,
+      },
+    },
+  },
 };

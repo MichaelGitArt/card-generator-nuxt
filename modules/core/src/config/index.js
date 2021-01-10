@@ -4,6 +4,9 @@ export default {
   aliases: {
     '@Core': '/',
   },
+  relations: [
+    'ui',
+  ],
   plugins: [
     {
       ssr: true,
