@@ -12,5 +12,9 @@ export default {
       ssr: true,
       src: './plugins/axios',
     },
+    {
+      ssr: true,
+      src: './plugins/i18n',
+    },
   ],
 };

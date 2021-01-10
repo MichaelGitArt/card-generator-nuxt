@@ -17,6 +17,7 @@
     "bootstrap-reboot": "^4.5.4",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
+    "nuxt-i18n": "^6.17.0",
     "vuex": "^3.6.0"
   },
   "devDependencies": {

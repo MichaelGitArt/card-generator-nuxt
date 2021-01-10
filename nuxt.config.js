@@ -54,6 +54,7 @@ export default {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
+    'nuxt-i18n',
   ],
 
   vuems: {
@@ -64,8 +65,28 @@ export default {
         'ui',
       ],
     },
+    i18n: [
+      'ru_RU',
+      'uk_UA',
+    ],
   },
-
+  i18n: {
+    vueI18n: {
+      locale: 'ru_RU',
+      fallbackLocale: 'ru_RU',
+      silentTranslationWarn: true,
+    },
+    locales: [
+      {
+        code: 'ru_RU',
+      },
+      {
+        code: 'uk_UA',
+      },
+    ],
+    vuex: false,
+    strategy: 'no_prefix',
+  },
   axios: {
     baseURL: BASE_URL || 'http://localhost:8000',
   },

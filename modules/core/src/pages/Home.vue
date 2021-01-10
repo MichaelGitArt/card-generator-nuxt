@@ -1,6 +1,6 @@
 <template>
   <div>
-    Home
+    {{ $t('hello') }} <br>
     <AButon>
       App Button
     </AButon>
