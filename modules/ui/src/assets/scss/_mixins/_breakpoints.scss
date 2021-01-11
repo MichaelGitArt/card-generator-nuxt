@@ -1,0 +1,57 @@
+@mixin MEDIA-XL {
+  @media only screen and (max-width: map-get($BREAKPOINTS, xl) - 1) {
+    @content;
+  }
+}
+@mixin MEDIA-LG {
+  @media only screen and (max-width: map-get($BREAKPOINTS, lg) - 1) {
+    @content;
+  }
+}
+@mixin MEDIA-MD {
+  @media only screen and (max-width: map-get($BREAKPOINTS, md) - 1) {
+    @content;
+  }
+}
+@mixin MEDIA-SM {
+  @media only screen and (max-width: map-get($BREAKPOINTS, sm) - 1) {
+    @content;
+  }
+}
+@mixin MEDIA-XS {
+  @media only screen and (max-width: map-get($BREAKPOINTS, xs) - 1) {
+    @content;
+  }
+}
+@mixin MEDIA-XSS {
+  @media only screen and (max-width: map-get($BREAKPOINTS, xxs) - 1) {
+    @content;
+  }
+}
+
+// Media up
+@mixin MEDIA-xl-up {
+  @media only screen and (min-width: map-get($BREAKPOINTS, xl)) {
+    @content;
+  }
+}
+@mixin MEDIA-LG-up {
+  @media only screen and (min-width: map-get($BREAKPOINTS, lg)) {
+    @content;
+  }
+}
+@mixin MEDIA-MD-up {
+  @media only screen and (min-width: map-get($BREAKPOINTS, md)) {
+    @content;
+  }
+}
+@mixin MEDIA-SM-up {
+  @media only screen and (min-width: map-get($BREAKPOINTS, sm)) {
+    @content;
+  }
+}
+@mixin MEDIA-XS-up {
+  @media only screen and (min-width: map-get($BREAKPOINTS, xs)) {
+    @content;
+  }
+}

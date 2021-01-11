@@ -2,4 +2,10 @@
 
 // variables
 @import "_variables/colors";
+@import "_variables/sizes";
+@import "_variables/indexes";
+@import "_variables/breakpoints";
 @import "_variables/borders";
+
+// mixins
+@import "_mixins/breakpoints";

@@ -1,9 +1,20 @@
 @import "~bootstrap-reboot";
 
+html, body {
+  font-size: 36px;
+}
+
 body {
-  font-size: 28px;
+  line-height: 1.2;
+  font-display: block;
   font-family:
     "fucken",
     "fuckru",
     "IndieFlower";
+}
+
+input,
+button,
+textarea {
+  outline: none !important;
 }

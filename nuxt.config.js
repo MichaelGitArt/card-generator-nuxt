@@ -12,7 +12,7 @@ export default {
   ssr: true,
   dev: IS_DEV,
   head: {
-    title: 'card-microfrontend',
+    title: 'MiCard',
     meta: [
       {
         charset: 'utf-8',
@@ -63,6 +63,7 @@ export default {
       local: [
         'core',
         'ui',
+        'home',
       ],
     },
     i18n: [
