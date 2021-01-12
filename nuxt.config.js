@@ -50,6 +50,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/style-resources',
     'nuxt-i18n',
+    'cookie-universal-nuxt',
   ],
 
   vuems: {

@@ -3,7 +3,9 @@ export default async ({
 }, inject) => {
   const DEFAULT_LANGUAGE = app.i18n.fallbackLocale;
   const loadedLanguages = [];
-  let language = DEFAULT_LANGUAGE;
+  const cookieLang = app.$cookies.get('lang');
+
+  let language = cookieLang || DEFAULT_LANGUAGE;
 
   const setI18nLanguage = ({
     lang, message,

@@ -12,8 +12,8 @@ export default {
 
 <style lang="scss" scoped>
   .app-main {
+    flex: 1;
     width: 100%;
-    height: 100vh;
     padding: 64px 0 0;
   }
 </style>

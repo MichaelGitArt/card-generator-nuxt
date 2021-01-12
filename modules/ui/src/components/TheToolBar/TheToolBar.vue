@@ -1,28 +1,28 @@
 <template>
-  <div class="a-tool-bar">
+  <div class="the-tool-bar">
     <AContainer>
-      <div class="a-tool-bar__inner">
-        <AToolBarLogo />
+      <div class="the-tool-bar__inner">
+        <TheToolBarLogo />
       </div>
     </AContainer>
   </div>
 </template>
 
 <script>
-import AToolBarLogo from '@UI/components/AToolBar/AToolBarLogo';
 import AContainer from '@UI/components/Layout/AContainer';
+import TheToolBarLogo from '@UI/components/TheToolBar/TheToolBarLogo';
 
 export default {
-  name: 'AToolBar',
+  name: 'TheToolBar',
   components: {
-    AToolBarLogo,
     AContainer,
+    TheToolBarLogo,
   },
 };
 </script>
 
 <style lang="scss" scoped>
-  .a-tool-bar {
+  .the-tool-bar {
     position: fixed;
     top: 0;
     left: 0;
