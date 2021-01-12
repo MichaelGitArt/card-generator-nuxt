@@ -6,7 +6,6 @@ dotenv.config({
 
 const IS_DEV = process.env.NODE_ENV !== 'production';
 const BASE_URL = process.env.API_BASE_URL || 'http://localhost:8000';
-const PORT = process.env.PORT || 80;
 
 export default {
   ssr: true,
@@ -38,10 +37,6 @@ export default {
         href: '/favicon.ico',
       },
     ],
-  },
-
-  server: {
-    port: PORT,
   },
 
   components: true,
