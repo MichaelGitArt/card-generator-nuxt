@@ -16,7 +16,7 @@ FROM node as nuxtjs
 WORKDIR /srv/app
 
 ENV HOST=0.0.0.0
-ENV PORT=80
+ENV PORT=8080
 
 COPY . /srv/app/
 
