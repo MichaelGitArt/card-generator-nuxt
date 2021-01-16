@@ -5,9 +5,10 @@
 </template>
 
 <script>
-import HomePage from '@Home/components/Pages/HomePage';
+import HomePage from '@Home/components/Pages/HomeMain';
 
 export default {
+  name: 'Home',
   components: {
     HomePage,
   },

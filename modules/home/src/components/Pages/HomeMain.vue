@@ -8,9 +8,9 @@
         />
 
         <div class="home-page__actions">
-          <AButon>
+          <AButton @click.native="onCreate">
             {{ $t('home.makePostcard') }}
-          </AButon>
+          </AButton>
         </div>
       </div>
       <div class="home-page__right">
@@ -25,13 +25,24 @@
 </template>
 
 <script>
-import AButon from '@UI/components/AButton/AButton';
+import {
+  ROUTE_NAME,
+} from '@Postcard/config/routes';
+import AButton from '@UI/components/AButton/AButton';
 import AContainer from '@UI/components/Layout/AContainer';
 
 export default {
+  name: 'HomeMain',
   components: {
-    AButon,
+    AButton,
     AContainer,
+  },
+  methods: {
+    onCreate() {
+      this.$router.push({
+        name: ROUTE_NAME.POSTCARD_CREATE,
+      });
+    },
   },
 };
 </script>
