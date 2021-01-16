@@ -1,0 +1,27 @@
+{
+  "postcard": {
+    "create": {
+      "forWho": "Для кого листiвка?",
+      "forWhoPlaceholder": "Софiя",
+      "withWhat": "З чим вiтаэмо?",
+      "withWhatPlaceholder": "Вибери свято",
+      "create": "Створити листiвку",
+      
+      "wrongFields": "Дурачок? Введи усi поля у форму"
+    },
+    
+    "result": {
+      "title": "Твоя листiвка готова! Копiюй посилання та надсилай",
+      "btnLabel": "Скопiювати посилання",
+      "copied": "Скопiйовано",
+      "cancel": "Охрана! Отмэна!",
+      "generateAgain": "Згенерувати знову",
+      "swipe": "Свайпай"
+    },
+    
+    "holidays": {
+      "march_8": "8 Березня",
+      "birthday": "День Народження"
+    }
+  }
+}

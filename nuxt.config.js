@@ -60,6 +60,7 @@ export default {
         'core',
         'ui',
         'home',
+        'postcard',
       ],
     },
     i18n: [

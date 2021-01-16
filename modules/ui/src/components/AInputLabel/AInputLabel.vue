@@ -35,4 +35,10 @@ export default {
     text-align: center;
     text-transform: uppercase;
   }
+
+  @include MEDIA-SM {
+    .input-label {
+      font-size: 0.8rem;
+    }
+  }
 </style>

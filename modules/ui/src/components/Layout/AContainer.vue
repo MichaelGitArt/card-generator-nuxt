@@ -12,6 +12,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    zeroPadding: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     classes() {
@@ -19,6 +23,7 @@ export default {
         'a-container',
         {
           'a-container--fill-height': this.fillHeight,
+          'a-container--padding': !this.zeroPadding,
         },
       ];
     },
@@ -32,8 +37,11 @@ export default {
     max-width: $CONTAINER_MAX_WIDTH;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
+    &--padding {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
 
     &--fill-height {
       height: 100%;

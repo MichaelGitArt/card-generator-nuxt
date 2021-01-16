@@ -158,6 +158,7 @@ export default {
     flex-direction: column;
     border: $BORDER_DASHED_3_BLACK;
     background-color: $WHITE;
+    transition: all 0.2s;
     opacity: 0;
     visibility: hidden;
     will-change:

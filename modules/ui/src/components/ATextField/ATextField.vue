@@ -5,6 +5,8 @@
         <input
           :class="classes"
           :placeholder="placeholder"
+          :value="value"
+          @input="onValueChange"
         >
       </InputController>
     </template>
@@ -29,12 +31,24 @@ export default {
       type: String,
       default: null,
     },
+    /**
+     * Component value
+     */
+    value: {
+      type: String,
+      default: null,
+    },
   },
   computed: {
     classes() {
       return [
         'a-text-field',
       ];
+    },
+  },
+  methods: {
+    onValueChange(event) {
+      this.$emit('input', event.target.value);
     },
   },
 };
