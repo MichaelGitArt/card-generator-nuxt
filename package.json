@@ -16,7 +16,7 @@
     "@nuxtjs/style-resources": "^1.0.0",
     "bootstrap-reboot": "^4.5.4",
     "cookie-universal-nuxt": "^2.1.4",
-    "core-js": "^3.6.5",
+    "core-js": "^3.8.3",
     "debounce": "^1.2.0",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.17.0",
